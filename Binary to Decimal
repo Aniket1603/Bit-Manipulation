@@ -1,0 +1,42 @@
+import java.util.*;
+public class binarySystem {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the number");
+        int n = scan.nextInt();
+        
+        
+// ArrayList<Integer> a =  new ArrayList<Integer>();
+// while(n!=0)
+// {
+//     int s = n%2;
+//     a.add(s);
+//     n = n/2;
+// }
+//     Collections.reverse(a);
+//        System.out.println(a);
+        
+        
+        
+   int sum=0,i=0;
+        while(n!=0)
+        {
+        int s = n%10;
+        if(s == 0)
+        {
+         
+          
+        }else
+        {  sum = sum +  (int) Math.pow(2,i);
+           
+        
+        }
+          n = n/10;
+                i++;
+        }
+     
+         System.out.println(sum);     
+        
+    
+    }
+}
